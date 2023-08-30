@@ -28,7 +28,7 @@ __copyright__ = f"Copyright (C) 2020 - 2023  {__author__}"
 
 catub.version = __version__
 catub.tgbot.version = __version__
-LOGS = logging.getLogger("CatUserbot")
+LOGS = logging.getLogger("King")
 bot = catub
 
 StartTime = time.time()
