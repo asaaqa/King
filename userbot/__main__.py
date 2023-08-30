@@ -25,17 +25,17 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("CatUserbot")
+LOGS = logging.getLogger("King")
 
 LOGS.info(userbot.__copyright__)
-LOGS.info(f"Licensed under the terms of the {userbot.__license__}")
+LOGS.info(f"مرخص بموجب  {userbot.__license__}")
 
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("Starting Userbot")
+    LOGS.info("بدء تشغيل البوت")
     catub.loop.run_until_complete(setup_bot())
-    LOGS.info("TG Bot Startup Completed")
+    LOGS.info("إكتمل تشغل البوت")
 except Exception as e:
     LOGS.error(f"{e}")
     sys.exit()
@@ -48,11 +48,11 @@ async def startup_process():
     LOGS.info(
         "============================================================================"
     )
-    LOGS.info("||               Yay your userbot is officially working.!!!")
+    LOGS.info("||               يوزر بوت الخاص فيگ يعمل بنجاح ♕ 🇾🇪 ♕.!!!")
     LOGS.info(
-        f"||   Congratulation, now type {cmdhr}alive to see message if catub is live"
+        f"||   الف مبروگ, إكتب الان {cmdhr}alive to see message if catub is live"
     )
-    LOGS.info("||   If you need assistance, head to https://t.me/catuserbot_support")
+    LOGS.info("||   اذا كنت بحاجة للمساعده , راسلني على  https://t.me/A_A_S_Q_Q")
     LOGS.info(
         "============================================================================"
     )
