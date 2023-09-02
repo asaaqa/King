@@ -78,14 +78,14 @@ plugin_category = "admin"
 
 
 @catub.cat_cmd(
-    pattern="gpic( -s| -d)$",
-    command=("gpic", plugin_category),
+    pattern="جيم( -s| -d)$",
+    command=("جيم", plugin_category),
     info={
-        "header": "For changing group display pic or deleting display pic",
-        "description": "Reply to Image for changing display picture",
+        "header": "لتغيير صورة عرض المجموعة أو حذف صورة العرض",
+        "description": "الرد على الصورة لتغيير صورة العرض",
         "flags": {
-            "-s": "To set group pic",
-            "-d": "To delete group pic",
+            "-s": "للموافقه على صورة الجروب",
+            "-d": "لحذف الصورة",
         },
         "usage": [
             "{tr}gpic -s <reply to image>",
