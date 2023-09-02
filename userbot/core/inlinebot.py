@@ -163,8 +163,8 @@ async def filemanager_article(event):
 async def deploy_article(event):
     buttons = [
         (
-            Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
-            Button.url("Deploy", "https://github.com/TgCatUB/nekopack"),
+            Button.url("Source code", "https://github.com/asaaqa/King"),
+            Button.url("Deploy", "https://github.com/asaaqa/Health"),
         )
     ]
     return await build_article(
@@ -242,7 +242,7 @@ async def article_builder(event, method):
         buttons = [
             (
                 Button.inline("Stats", data="stats"),
-                Button.url("Repo", "https://github.com/TgCatUB/catuserbot"),
+                Button.url("Repo", "https://github.com/asaaqa/King"),
             )
         ]
         try:
@@ -458,7 +458,7 @@ async def inline_handler(event):
                 json.dump(jsondata, open(old_msg, "w"))
             else:
                 json.dump(new_msg, open(old_msg, "w"))
-        elif string == "help":
+        elif string == "مساعده":
             result = await help_article(event)
             await event.answer([result] if result else None)
         elif string == "spotify":
