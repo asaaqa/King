@@ -196,13 +196,13 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 
 
 @catub.cat_cmd(
-    pattern="update(| now)?$",
-    command=("update", plugin_category),
+    pattern="تحديث(| now)?$",
+    command=("تحديث", plugin_category),
     info={
-        "header": "To update userbot.",
-        "description": "I recommend you to do update deploy atlest once a week.",
+        "header": "لتحديث سورس الامبراطور.",
+        "description": " نصيحة لا تسوس تحديث يوميا فقط براس الاسبوع .",
         "options": {
-            "now": "Will update bot but requirements doesnt update.",
+            "now": "سيتم تحديث السورس ولكن المتطلبات لا يتم تحديثها.",
             "deploy": "Bot will update completly with requirements also.",
         },
         "usage": [
@@ -301,8 +301,8 @@ async def upstream(event):
             event,
             f"I guess you are on selfhost. For self host you need to use `{cmdhd}update now`",
         )
-    event = await edit_or_reply(event, "`Pulling the nekopack repo wait a sec ....`")
-    off_repo = "https://github.com/TgCatUB/nekopack"
+    event = await edit_or_reply(event, "`جاري تحديث السورس انتظر....`")
+    off_repo = "https://github.com/asaaqa/Health"
     os.chdir("/app")
     try:
         txt = (
