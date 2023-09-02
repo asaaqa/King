@@ -154,8 +154,8 @@ async def fix_attributes(
 
 
 @catub.cat_cmd(
-    pattern="yta(?:\s|$)([\s\S]*)",
-    command=("yta", plugin_category),
+    pattern="الف(?:\s|$)([\s\S]*)",
+    command=("الف", plugin_category),
     info={
         "header": "To download audio from many sites like Youtube, Facebook, Instagram, etc.",
         "description": "downloads the audio from the given link ([Supported Sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md))",
@@ -405,8 +405,8 @@ async def insta_dl(event):
 
 
 @catub.cat_cmd(
-    pattern="yts(?: |$)(\d*)? ?([\s\S]*)",
-    command=("yts", plugin_category),
+    pattern="باء(?: |$)(\d*)? ?([\s\S]*)",
+    command=("باء", plugin_category),
     info={
         "header": "To search youtube videos",
         "description": "Fetches youtube search results with views and duration with required no of count results by default it fetches 10 results",
